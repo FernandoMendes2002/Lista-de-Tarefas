@@ -1,0 +1,56 @@
+*{
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+    background-color: rgb(200, 177, 230);
+}
+
+header, form { 
+    height: 100%;
+    font-size: 35px; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#nome-tarefa {
+    font-size: 30px;
+    background-color: #fff;
+}
+
+#botao-cancelar {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: red;
+    color:#fff;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+#botao-adicionar {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+ul { list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    width: 50%; 
+    margin: 0 auto;
+}
+
+li { text-align: center; /* Centraliza o texto dentro dos itens da lista */ 
+    font-size: 1.5em; /* Aumenta o tamanho do texto */ 
+    border: 1px solid #fff; /* Adiciona uma borda ao redor dos itens da lista */ 
+    padding: 10px; 
+    margin: 5px 0;
+}
+
+.Tarefa-digitar {
+    background-color: #fff;
+    outline: none;
+}
+
