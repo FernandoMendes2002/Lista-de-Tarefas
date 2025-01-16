@@ -1,6 +1,6 @@
 *{
-    margin: 1;
-    padding: 1;
+    margin: 10px;
+    padding: 5px;
     box-sizing: border-box;
     background-color: rgb(200, 177, 230);
 }
@@ -35,18 +35,18 @@ header, form {
     font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
 }
 
-ul { list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
+#lista-tarefas { 
+    list-style-type: none; 
     width: 50%; 
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
-li { text-align: center; /* Centraliza o texto dentro dos itens da lista */ 
+li {
+    text-align: center; /* Centraliza o texto dentro dos itens da lista */ 
     font-size: 1.5em; /* Aumenta o tamanho do texto */ 
     border: 1px solid #fff; /* Adiciona uma borda ao redor dos itens da lista */ 
     padding: 10px; 
-    margin: 5px 0;
+    cursor: pointer;
 }
 
 .Tarefa-digitar {
@@ -54,3 +54,6 @@ li { text-align: center; /* Centraliza o texto dentro dos itens da lista */
     outline: none;
 }
 
+.completed { 
+    text-decoration: line-through; 
+}

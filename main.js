@@ -9,12 +9,17 @@ $(document).ready(function(){
 
     $('form').on('submit', function(e) {
         e.preventDefault();
-        const enderecoDaNovaTarefa = $('#nome-tarefa').val();
-        const novoItem = $('<li style="display: none"></li>');
-        novoItem.text(enderecoDaNovaTarefa);
-        $(novoItem).appendTo('ul');
-        $(novoItem).fadeIn(1000);
-        $('#nome-tarefa').val('');
-    });
-});
+        addTask();
+    })      
 
+        function addTask() { 
+            const taskInput = document.getElementById('nome-tarefa'); 
+            const taskList = document.getElementById('lista-tarefas'); 
+            const newTask = document.createElement('li'); 
+            newTask.textContent = taskInput.value; 
+            newTask.onclick = function() { 
+                this.classList.toggle('completed'); 
+            }
+            taskList.appendChild(newTask); 
+            taskInput.value = ''; 
+}});
